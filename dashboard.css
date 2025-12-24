@@ -1,0 +1,50 @@
+.wrap-navbar {
+    max-width: 1240px;
+    background-color: #0a0a0a;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    border-radius: 16px;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between
+}
+
+.right {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+}
+
+.logo {
+    background-color: #fafafa;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.002em;
+    margin: 0px;
+}
+
+.date-time {
+    color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.wrap-icon {
+    display: flex;
+    gap: 16px;
+}
