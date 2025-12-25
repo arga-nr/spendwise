@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="dashboard.css">
+    
     <title>Dashboard</title>
 </head>
 <body>
@@ -60,48 +66,120 @@
 
     <main>
         <section>
-            <container>
+            <container class="main-container">
 
                 <!-- title start -->
-                <h1>Dashboard</h1>
+                <h1 class="container-title">Dashboard</h1>
                 <hr>
                 <!-- title end -->
 
-                <!-- main dashboard -->
-                <div>
+                <div class="container-content">
+                    <!-- main dashboard -->
+                    <div class="wrap-right">
 
-                    <!-- total balance -->
-                    <div>
-                        <h2>Total Balance</h2>
-                        <div>
-                            <p id="display balance">€0</p>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                            <rect width="40" height="40" rx="20" fill="#FAFAFA"/>
-                                            <path d="M14.375 19.5312L20 13.9062L25.625 19.5312M20 14.6875V26.0938" stroke="#0A0A0A" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <div>
-                                            <h3>Income</h3>
-                                            <p id="display Income">€0</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                            <rect width="40" height="40" rx="20" fill="#FAFAFA"/>
-                                            <path d="M14.375 19.5312L20 13.9062L25.625 19.5312M20 14.6875V26.0938" stroke="#0A0A0A" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <div>
-                                            <h3>Outcome</h3>
-                                            <p id="display Income">€0</p>
-                                        </div>
-                                    </li>
-                                </ul>
+                        <!-- total balance -->
+                        <div class="container-total-balance">
+                            <h2>Total Balance</h2>
+                            <div class="total-balance">
+                                <p id="display balance" class="display-balance">€0</p>
+                                <div>
+                                    <ul class="stats-container">
+
+                                        <li class="stat-card stat-card--income">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <rect width="40" height="40" rx="20" fill="#FAFAFA"/>
+                                                <path d="M14.375 19.5312L20 13.9062L25.625 19.5312M20 14.6875V26.0938" stroke="#0A0A0A" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <div class="wrap-info">
+                                                <h3 class="stat-info">Income</h3>
+                                                <p id="display Income" class="display-cashflow">€0</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="stat-card stat-card--outcome">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <rect width="40" height="40" rx="20" fill="#FAFAFA"/>
+                                                <path d="M14.375 19.5312L20 13.9062L25.625 19.5312M20 14.6875V26.0938" stroke="#0A0A0A" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <div class="wrap-info">
+                                                <h3 class="stat-info">Outcome</h3>
+                                                <p id="display Income" class="display-cashflow">€0</p>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
+                        <!-- total balance -->
+
+                        <!-- transaction hisory -->
+                        <div>
+                            <h2>Transaction History</h2>
+                            <div>
+                                <p>Name</p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <rect width="32" height="32" rx="8" fill="#0A0A0A"/>
+                                        <g clip-path="url(#clip0_4_210)">
+                                        <path d="M20 13.3333H20.6667C21.3739 13.3333 22.0522 13.6143 22.5523 14.1144C23.0524 14.6145 23.3333 15.2927 23.3333 16C23.3333 16.7072 23.0524 17.3855 22.5523 17.8856C22.0522 18.3857 21.3739 18.6666 20.6667 18.6666H20" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.33334 13.3333H20V19.3333C20 20.0406 19.7191 20.7188 19.219 21.2189C18.7189 21.719 18.0406 22 17.3333 22H12C11.2928 22 10.6145 21.719 10.1144 21.2189C9.61429 20.7188 9.33334 20.0406 9.33334 19.3333V13.3333Z" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 8.66669V10.6667" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.6667 8.66669V10.6667" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M17.3333 8.66669V10.6667" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_4_210">
+                                        <rect width="16" height="16" fill="white" transform="translate(8 8)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <div>
+                                        <p id="Name Expenses">Americano</p>
+                                        <p id="Price">€0</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g opacity="0.6">
+                                        <path d="M5.25 5.25L6.1875 20.25C6.23203 21.1167 6.8625 21.75 7.6875 21.75H16.3125C17.1408 21.75 17.7595 21.1167 17.8125 20.25L18.75 5.25" stroke="#950000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3.75 5.25H20.25H3.75Z" fill="#950000"/>
+                                        <path d="M3.75 5.25H20.25" stroke="#950000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                                        <path d="M9 5.25V3.375C8.99957 3.22715 9.02837 3.08066 9.08475 2.94397C9.14114 2.80729 9.22399 2.6831 9.32854 2.57854C9.43309 2.47399 9.55728 2.39114 9.69397 2.33476C9.83066 2.27838 9.97714 2.24957 10.125 2.25H13.875C14.0229 2.24957 14.1693 2.27838 14.306 2.33476C14.4427 2.39114 14.5669 2.47399 14.6715 2.57854C14.776 2.6831 14.8589 2.80729 14.9152 2.94397C14.9716 3.08066 15.0004 3.22715 15 3.375V5.25M12 8.25001V18.75M8.625 8.25001L9 18.75M15.375 8.25001L15 18.75" stroke="#950000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <rect width="32" height="32" rx="8" fill="#0A0A0A"/>
+                                        <g clip-path="url(#clip0_4_210)">
+                                        <path d="M20 13.3333H20.6667C21.3739 13.3333 22.0522 13.6143 22.5523 14.1144C23.0524 14.6145 23.3333 15.2927 23.3333 16C23.3333 16.7072 23.0524 17.3855 22.5523 17.8856C22.0522 18.3857 21.3739 18.6666 20.6667 18.6666H20" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.33334 13.3333H20V19.3333C20 20.0406 19.7191 20.7188 19.219 21.2189C18.7189 21.719 18.0406 22 17.3333 22H12C11.2928 22 10.6145 21.719 10.1144 21.2189C9.61429 20.7188 9.33334 20.0406 9.33334 19.3333V13.3333Z" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 8.66669V10.6667" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.6667 8.66669V10.6667" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M17.3333 8.66669V10.6667" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_4_210">
+                                        <rect width="16" height="16" fill="white" transform="translate(8 8)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <div>
+                                        <p id="Name Expenses">Americano</p>
+                                        <p id="Price">€0</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g opacity="0.6">
+                                        <path d="M5.25 5.25L6.1875 20.25C6.23203 21.1167 6.8625 21.75 7.6875 21.75H16.3125C17.1408 21.75 17.7595 21.1167 17.8125 20.25L18.75 5.25" stroke="#950000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3.75 5.25H20.25H3.75Z" fill="#950000"/>
+                                        <path d="M3.75 5.25H20.25" stroke="#950000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                                        <path d="M9 5.25V3.375C8.99957 3.22715 9.02837 3.08066 9.08475 2.94397C9.14114 2.80729 9.22399 2.6831 9.32854 2.57854C9.43309 2.47399 9.55728 2.39114 9.69397 2.33476C9.83066 2.27838 9.97714 2.24957 10.125 2.25H13.875C14.0229 2.24957 14.1693 2.27838 14.306 2.33476C14.4427 2.39114 14.5669 2.47399 14.6715 2.57854C14.776 2.6831 14.8589 2.80729 14.9152 2.94397C14.9716 3.08066 15.0004 3.22715 15 3.375V5.25M12 8.25001V18.75M8.625 8.25001L9 18.75M15.375 8.25001L15 18.75" stroke="#950000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- transaction history -->
                     </div>
-                    <!-- total balance -->
 
                     <!-- add expenses -->
                     <div>
@@ -128,73 +206,6 @@
                         </div>
                     </div>
                     <!-- add expenses -->
-
-                    <!-- transaction hisory -->
-                    <div>
-                        <h2>Transaction History</h2>
-                        <div>
-                            <p>Name</p>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                    <rect width="32" height="32" rx="8" fill="#0A0A0A"/>
-                                    <g clip-path="url(#clip0_4_210)">
-                                    <path d="M20 13.3333H20.6667C21.3739 13.3333 22.0522 13.6143 22.5523 14.1144C23.0524 14.6145 23.3333 15.2927 23.3333 16C23.3333 16.7072 23.0524 17.3855 22.5523 17.8856C22.0522 18.3857 21.3739 18.6666 20.6667 18.6666H20" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9.33334 13.3333H20V19.3333C20 20.0406 19.7191 20.7188 19.219 21.2189C18.7189 21.719 18.0406 22 17.3333 22H12C11.2928 22 10.6145 21.719 10.1144 21.2189C9.61429 20.7188 9.33334 20.0406 9.33334 19.3333V13.3333Z" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12 8.66669V10.6667" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M14.6667 8.66669V10.6667" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M17.3333 8.66669V10.6667" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_4_210">
-                                    <rect width="16" height="16" fill="white" transform="translate(8 8)"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                                <div>
-                                    <p id="Name Expenses">Americano</p>
-                                    <p id="Price">€0</p>
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <g opacity="0.6">
-                                    <path d="M5.25 5.25L6.1875 20.25C6.23203 21.1167 6.8625 21.75 7.6875 21.75H16.3125C17.1408 21.75 17.7595 21.1167 17.8125 20.25L18.75 5.25" stroke="#950000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M3.75 5.25H20.25H3.75Z" fill="#950000"/>
-                                    <path d="M3.75 5.25H20.25" stroke="#950000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                                    <path d="M9 5.25V3.375C8.99957 3.22715 9.02837 3.08066 9.08475 2.94397C9.14114 2.80729 9.22399 2.6831 9.32854 2.57854C9.43309 2.47399 9.55728 2.39114 9.69397 2.33476C9.83066 2.27838 9.97714 2.24957 10.125 2.25H13.875C14.0229 2.24957 14.1693 2.27838 14.306 2.33476C14.4427 2.39114 14.5669 2.47399 14.6715 2.57854C14.776 2.6831 14.8589 2.80729 14.9152 2.94397C14.9716 3.08066 15.0004 3.22715 15 3.375V5.25M12 8.25001V18.75M8.625 8.25001L9 18.75M15.375 8.25001L15 18.75" stroke="#950000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                    <rect width="32" height="32" rx="8" fill="#0A0A0A"/>
-                                    <g clip-path="url(#clip0_4_210)">
-                                    <path d="M20 13.3333H20.6667C21.3739 13.3333 22.0522 13.6143 22.5523 14.1144C23.0524 14.6145 23.3333 15.2927 23.3333 16C23.3333 16.7072 23.0524 17.3855 22.5523 17.8856C22.0522 18.3857 21.3739 18.6666 20.6667 18.6666H20" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9.33334 13.3333H20V19.3333C20 20.0406 19.7191 20.7188 19.219 21.2189C18.7189 21.719 18.0406 22 17.3333 22H12C11.2928 22 10.6145 21.719 10.1144 21.2189C9.61429 20.7188 9.33334 20.0406 9.33334 19.3333V13.3333Z" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12 8.66669V10.6667" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M14.6667 8.66669V10.6667" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M17.3333 8.66669V10.6667" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_4_210">
-                                    <rect width="16" height="16" fill="white" transform="translate(8 8)"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                                <div>
-                                    <p id="Name Expenses">Americano</p>
-                                    <p id="Price">€0</p>
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <g opacity="0.6">
-                                    <path d="M5.25 5.25L6.1875 20.25C6.23203 21.1167 6.8625 21.75 7.6875 21.75H16.3125C17.1408 21.75 17.7595 21.1167 17.8125 20.25L18.75 5.25" stroke="#950000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M3.75 5.25H20.25H3.75Z" fill="#950000"/>
-                                    <path d="M3.75 5.25H20.25" stroke="#950000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                                    <path d="M9 5.25V3.375C8.99957 3.22715 9.02837 3.08066 9.08475 2.94397C9.14114 2.80729 9.22399 2.6831 9.32854 2.57854C9.43309 2.47399 9.55728 2.39114 9.69397 2.33476C9.83066 2.27838 9.97714 2.24957 10.125 2.25H13.875C14.0229 2.24957 14.1693 2.27838 14.306 2.33476C14.4427 2.39114 14.5669 2.47399 14.6715 2.57854C14.776 2.6831 14.8589 2.80729 14.9152 2.94397C14.9716 3.08066 15.0004 3.22715 15 3.375V5.25M12 8.25001V18.75M8.625 8.25001L9 18.75M15.375 8.25001L15 18.75" stroke="#950000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- transaction history -->
                 </div>
             </container>
         </section>

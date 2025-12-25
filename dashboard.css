@@ -1,5 +1,5 @@
 .wrap-navbar {
-    max-width: 1240px;
+    width: 1240px;
     background-color: #0a0a0a;
     padding-left: 16px;
     padding-top: 16px;
@@ -31,8 +31,8 @@
 
 .logo-text {
     color: #fafafa;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.002em;
     margin: 0px;
@@ -40,11 +40,143 @@
 
 .date-time {
     color: #fafafa;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'inter', sans-serif;
     font-size: 16px;
 }
 
 .wrap-icon {
     display: flex;
     gap: 16px;
+}
+
+h1 {
+    font-family: 'inter', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.002em;
+    line-height: 1.2em;
+    margin-top: 56px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: 'inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.002em;
+    line-height: 1.2em;
+    margin: 0;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #a1a1a1;
+    margin-top: 24px;
+    margin-bottom: 56px;
+}
+
+.main-container {
+    max-width: 1240px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between
+}
+
+.container-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.wrap-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.container-total-balance {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.container-title {
+    align-items: start;
+    width: 100%;
+}
+
+.total-balance {
+    display: flex;
+    flex-direction: column;
+    width: 715px;
+    height: 300px;
+    border: 2px solid #a1a1a1;
+    border-radius: 56px;
+    padding: 24px;
+    justify-content: space-between;
+}
+
+.display-balance {
+    font-size: 64px;
+    font-family: 'inter', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2em;
+    letter-spacing: -0.002em;
+}
+
+.stats-container {
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.stat-card {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 32px;
+    gap: 16px;
+    border-radius: 40px;
+}
+
+.stat-card--income {
+    background-color: #0a0a0a;
+    gap: 16px;
+}
+
+.stat-card--outcome {
+    background-color: #0a0a0a;
+    gap: 16px;
+}
+
+.wrap-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stat-info {
+    color: #a1a1a1;
+    margin: 0;
+    font-family: 'inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.display-cashflow {
+    color: #fafafa;
+    font-family: 'inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: -0.002em;
+    margin: 0;
 }
