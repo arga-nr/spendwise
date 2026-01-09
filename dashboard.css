@@ -1,3 +1,24 @@
+h1 {
+    font-family: 'inter', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.002em;
+    line-height: 1.2em;
+    margin-top: 56px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: 'inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.002em;
+    line-height: 1.2em;
+    margin: 0;
+}
+
+
+
 .wrap-navbar {
     box-sizing: border-box;
     width: 1240px;
@@ -50,24 +71,6 @@
     gap: 16px;
 }
 
-h1 {
-    font-family: 'inter', sans-serif;
-    font-size: 32px;
-    font-weight: 500;
-    letter-spacing: -0.002em;
-    line-height: 1.2em;
-    margin-top: 56px;
-    margin-bottom: 0;
-}
-
-h2 {
-    font-family: 'inter', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: -0.002em;
-    line-height: 1.2em;
-    margin: 0;
-}
 
 hr {
     border: 1px solid #a1a1a1;
@@ -179,4 +182,8 @@ hr {
     line-height: 1.2em;
     letter-spacing: -0.002em;
     margin: 0;
+}
+
+.expense-top {
+    border: none;
 }
